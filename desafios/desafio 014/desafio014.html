@@ -12,8 +12,22 @@
         table {
             border-collapse: collapse;
         }
+        
+        thead > tr > th {
+            background-color: rgb(83, 83, 83);
+            color: white;
+        }
 
-    
+        .md {
+            text-align: left;
+            background-color: rgb(83, 83, 83);
+            color: white;
+        }
+
+        .dm {
+            background-color: rgb(83, 83, 83);
+            color: white;
+        }
         th ,td {
             border: 1px solid gray;
             padding: 10px;
@@ -23,7 +37,7 @@
 </head>
 <body>
     <h1>Desafio de tablelas 014</h1>
-    
+
     <table>
         <thead>
             <tr>
@@ -62,8 +76,8 @@
                 <td>0.0</td> 
             </tr>
             <tr>
-                <th colspan="4" scope="colgroup">Médias Exatas</th>
-                <th scope="row">0.0</th>
+                <th colspan="4" scope="colgroup" class="md">Médias Exatas</th>
+                <td class="dm"><strong>0.0</strong></td>
             </tr>
             <tr>
                 <th rowspan="2" scope="rowgroup">Humanas</th>
@@ -79,8 +93,8 @@
                 <td>0.0</td> 
             </tr>
             <tr>
-                <th colspan="4" scope="colgroup">Média de Humanas</th>
-                <th scope="row">0.0</th>
+                <th colspan="4" scope="colgroup" class="md">Média de Humanas</th>
+                <td class="dm"><strong>0.0</strong></td>
             </tr>
         </tbody>
     </table>
